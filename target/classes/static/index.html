@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Employee Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="departments.html">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-department.html">Add Department</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-employee.html">Add Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cards.html">Product Cards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Employee Management System</h1>
+            <p class="lead">Manage your organization's departments and employees efficiently.</p>
+            <hr class="my-4">
+            <p>Use the options below to get started:</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Departments</h5>
+                            <p class="card-text">View and manage all departments in your organization.</p>
+                            <a href="departments.html" class="btn btn-primary">View Departments</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Department</h5>
+                            <p class="card-text">Create a new department in your organization.</p>
+                            <a href="add-department.html" class="btn btn-success">Add Department</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Employee</h5>
+                            <p class="card-text">Add a new employee to your organization.</p>
+                            <a href="add-employee.html" class="btn btn-info">Add Employee</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mt-4">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Search Employees by Department</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="departmentId" class="form-label">Department ID</label>
+                            <input type="text" class="form-control" id="departmentId" placeholder="Enter Department ID (e.g. dept01)">
+                        </div>
+                        <button id="searchBtn" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+
+                <div id="employeeResults" class="mt-4">
+                    <!-- Employees will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2023 Employee Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
